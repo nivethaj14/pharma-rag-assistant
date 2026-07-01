@@ -1,5 +1,6 @@
 # PharmaRAG — FDA Regulatory Knowledge Assistant
 🔗 **Live Demo**: https://pharma-rag-assistant.streamlit.app
+![PharmaRAG App](docs/app_screenshot.png)
 
 A production-grade Retrieval-Augmented Generation (RAG) system built on 
 Snowflake Cortex for querying FDA oncology guidance documents and clinical 
