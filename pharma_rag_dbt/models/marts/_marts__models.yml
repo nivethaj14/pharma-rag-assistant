@@ -1,0 +1,39 @@
+version: 2
+
+models:
+  - name: docs_ready_for_embedding
+    description: "Final embedding-ready chunks from parsed regulatory documents"
+    columns:
+      - name: chunk_id
+        description: "Unique identifier for each chunk"
+        tests:
+          - unique
+          - not_null
+
+      - name: file_name
+        description: "Source PDF filename"
+        tests:
+          - not_null
+
+      - name: document_type
+        description: "Classified document type"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['FDA_GUIDANCE', 'CLINICAL_PROTOCOL', 'STATISTICAL_ANALYSIS_PLAN', 'OTHER']
+
+      - name: chunk_quality
+        description: "Quality flag for chunk length"
+        tests:
+          - accepted_values:
+              values: ['GOOD', 'TOO_SHORT', 'TOO_LONG']
+
+      - name: word_count
+        description: "Word count of chunk"
+        tests:
+          - not_null
+
+      - name: text_for_embedding
+        description: "Combined heading and chunk text for embedding"
+        tests:
+          - not_null

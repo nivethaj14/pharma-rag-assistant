@@ -1,0 +1,193 @@
+[
+  {
+    "question": "What are the safety monitoring requirements for radiopharmaceutical therapies?",
+    "notes": "Should cite Safety Monitoring section",
+    "keyword_score": 1.0,
+    "source_score": 1.0,
+    "overall_score": 1.0,
+    "keywords_found": [
+      "safety",
+      "monitoring",
+      "radiation",
+      "adverse"
+    ],
+    "keywords_missed": [],
+    "sources_found": [
+      "508ed_dg_rpt_dosage"
+    ],
+    "refused": false,
+    "chunks_retrieved": 7
+  },
+  {
+    "question": "How long should sponsors monitor for late radiation adverse events?",
+    "notes": "Should return specific 5-year timeframe",
+    "keyword_score": 0.67,
+    "source_score": 1.0,
+    "overall_score": 0.83,
+    "keywords_found": [
+      "5 years",
+      "rAESI"
+    ],
+    "keywords_missed": [
+      "postmarketing"
+    ],
+    "sources_found": [
+      "508ed_dg_rpt_dosage"
+    ],
+    "refused": false,
+    "chunks_retrieved": 7
+  },
+  {
+    "question": "What is the recommended approach for dose escalation in oncology trials?",
+    "notes": "Should cite multiple documents",
+    "keyword_score": 1.0,
+    "source_score": 0.5,
+    "overall_score": 0.75,
+    "keywords_found": [
+      "dose",
+      "escalation",
+      "toxicity",
+      "MTD"
+    ],
+    "keywords_missed": [],
+    "sources_found": [
+      "508ed_dg_rpt_dosage"
+    ],
+    "refused": false,
+    "chunks_retrieved": 8
+  },
+  {
+    "question": "What participant populations are suitable for RPT dose-finding trials?",
+    "notes": "Should cite Participant Population section",
+    "keyword_score": 1.0,
+    "source_score": 1.0,
+    "overall_score": 1.0,
+    "keywords_found": [
+      "participant",
+      "population",
+      "life expectancy",
+      "cancer"
+    ],
+    "keywords_missed": [],
+    "sources_found": [
+      "508ed_dg_rpt_dosage"
+    ],
+    "refused": false,
+    "chunks_retrieved": 8
+  },
+  {
+    "question": "What is dosimetry and why is it important for RPTs?",
+    "notes": "Should cite Dosimetry section",
+    "keyword_score": 0.75,
+    "source_score": 1.0,
+    "overall_score": 0.88,
+    "keywords_found": [
+      "dosimetry",
+      "absorbed dose",
+      "organ"
+    ],
+    "keywords_missed": [
+      "imaging"
+    ],
+    "sources_found": [
+      "508ed_dg_rpt_dosage"
+    ],
+    "refused": false,
+    "chunks_retrieved": 7
+  },
+  {
+    "question": "How should informed consent address radiation toxicity risks?",
+    "notes": "Should cite Trial Design section",
+    "keyword_score": 1.0,
+    "source_score": 1.0,
+    "overall_score": 1.0,
+    "keywords_found": [
+      "informed consent",
+      "toxicity",
+      "long-term",
+      "risk"
+    ],
+    "keywords_missed": [],
+    "sources_found": [
+      "508ed_dg_rpt_dosage"
+    ],
+    "refused": false,
+    "chunks_retrieved": 7
+  },
+  {
+    "question": "What are the key clinical trial endpoints for cancer drug approval?",
+    "notes": "Should cite second document",
+    "keyword_score": 0.75,
+    "source_score": 0.0,
+    "overall_score": 0.38,
+    "keywords_found": [
+      "endpoint",
+      "approval",
+      "survival"
+    ],
+    "keywords_missed": [
+      "efficacy"
+    ],
+    "sources_found": [],
+    "refused": false,
+    "chunks_retrieved": 8
+  },
+  {
+    "question": "What is the difference between EBRT and RPT dosing approaches?",
+    "notes": "Should explain key difference",
+    "keyword_score": 1.0,
+    "source_score": 1.0,
+    "overall_score": 1.0,
+    "keywords_found": [
+      "EBRT",
+      "RPT",
+      "organ",
+      "tolerance"
+    ],
+    "keywords_missed": [],
+    "sources_found": [
+      "508ed_dg_rpt_dosage"
+    ],
+    "refused": false,
+    "chunks_retrieved": 8
+  },
+  {
+    "question": "How should sponsors handle cumulative radiation dose limits?",
+    "notes": "Should cite Trial Design section",
+    "keyword_score": 0.75,
+    "source_score": 1.0,
+    "overall_score": 0.88,
+    "keywords_found": [
+      "cumulative",
+      "administered activity",
+      "limit"
+    ],
+    "keywords_missed": [
+      "cycles"
+    ],
+    "sources_found": [
+      "508ed_dg_rpt_dosage"
+    ],
+    "refused": false,
+    "chunks_retrieved": 7
+  },
+  {
+    "question": "What biomarkers should be considered for delayed radiation toxicity?",
+    "notes": "Should cite Safety Monitoring section",
+    "keyword_score": 1.0,
+    "source_score": 1.0,
+    "overall_score": 1.0,
+    "keywords_found": [
+      "biomarker",
+      "delayed",
+      "radiation",
+      "blood"
+    ],
+    "keywords_missed": [],
+    "sources_found": [
+      "508ed_dg_rpt_dosage"
+    ],
+    "refused": false,
+    "chunks_retrieved": 7
+  }
+]

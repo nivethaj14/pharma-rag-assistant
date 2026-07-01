@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: raw
+    database: pharma_rag_db
+    schema: raw
+    tables:
+      - name: parsed_documents
+        description: "Raw parsed documents from Snowflake PARSE_DOCUMENT"
+        columns:
+          - name: relative_path
+            description: "File path of the source PDF in the stage"
+          - name: parsed_content
+            description: "Full JSON output from PARSE_DOCUMENT including content and metadata"
+          - name: loaded_at
+            description: "Timestamp when document was loaded into raw table"

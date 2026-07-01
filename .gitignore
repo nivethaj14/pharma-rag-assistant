@@ -1,0 +1,10 @@
+
+target/
+dbt_packages/
+logs/
+venv/
+.env
+rsa_key.p8
+rsa_key.pub
+__pycache__/
+*.pyc
