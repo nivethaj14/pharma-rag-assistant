@@ -22,7 +22,7 @@ regulatory documents, with every answer grounded in cited source documents.
 
 ## Architecture
 
-![PharmaRAG Architecture](docs/architecture.png)
+![PharmaRAG Architecture](docs/architecture.PNG)
 
 ### Pipeline Overview
 
