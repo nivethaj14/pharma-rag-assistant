@@ -9,26 +9,52 @@ load_dotenv(dotenv_path=Path(__file__).parent.parent / ".env")
 
 def get_snowflake_connection():
     """Create Snowflake connection using key pair auth."""
-    with open(os.getenv("SNOWFLAKE_PRIVATE_KEY_PATH"), "rb") as key_file:
+    import streamlit as st
+    from cryptography.hazmat.primitives import serialization
+    import os
+
+    try:
+        private_key_text = st.secrets["private_key"]
         private_key = serialization.load_pem_private_key(
-            key_file.read(),
+            private_key_text.encode(),
             password=None
         )
-    
+    except Exception:
+        with open(os.getenv("SNOWFLAKE_PRIVATE_KEY_PATH"), "rb") as key_file:
+            private_key = serialization.load_pem_private_key(
+                key_file.read(),
+                password=None
+            )
+
     private_key_bytes = private_key.private_bytes(
         encoding=serialization.Encoding.DER,
         format=serialization.PrivateFormat.PKCS8,
         encryption_algorithm=serialization.NoEncryption()
     )
-    
+
+    try:
+        account = st.secrets["SNOWFLAKE_ACCOUNT"]
+        user = st.secrets["SNOWFLAKE_USER"]
+        role = st.secrets["SNOWFLAKE_ROLE"]
+        warehouse = st.secrets["SNOWFLAKE_WAREHOUSE"]
+        database = st.secrets["SNOWFLAKE_DATABASE"]
+        schema = st.secrets["SNOWFLAKE_SCHEMA"]
+    except Exception:
+        account = os.getenv("SNOWFLAKE_ACCOUNT")
+        user = os.getenv("SNOWFLAKE_USER")
+        role = os.getenv("SNOWFLAKE_ROLE")
+        warehouse = os.getenv("SNOWFLAKE_WAREHOUSE")
+        database = os.getenv("SNOWFLAKE_DATABASE")
+        schema = os.getenv("SNOWFLAKE_SCHEMA")
+
     conn = snowflake.connector.connect(
-        account=os.getenv("SNOWFLAKE_ACCOUNT"),
-        user=os.getenv("SNOWFLAKE_USER"),
+        account=account,
+        user=user,
         private_key=private_key_bytes,
-        role=os.getenv("SNOWFLAKE_ROLE"),
-        warehouse=os.getenv("SNOWFLAKE_WAREHOUSE"),
-        database=os.getenv("SNOWFLAKE_DATABASE"),
-        schema=os.getenv("SNOWFLAKE_SCHEMA")
+        role=role,
+        warehouse=warehouse,
+        database=database,
+        schema=schema
     )
     return conn
 
