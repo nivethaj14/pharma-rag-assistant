@@ -48,6 +48,7 @@ regulatory documents, with every answer grounded in cited source documents.
 ---
 
 ## Project Structure
+```
 pharma-rag-assistant/
 ├── app.py                    # Streamlit chat application
 ├── src/
@@ -62,6 +63,7 @@ pharma-rag-assistant/
 │   └── architecture.html     # Architecture diagram
 ├── requirements.txt
 └── README.md
+```
 ---
 
 ## Key Design Decisions
