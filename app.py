@@ -31,7 +31,7 @@ with st.sidebar:
     - FDA public guidance documents
     """)
 
-st.divider()
+    st.divider()
     st.info(
         "ℹ️ **Portfolio Demo**\n\n"
         "Running on a Snowflake trial account. "
